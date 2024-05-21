@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Main } from '.';
 
 const meta: Meta<typeof Main> = {
-    component: Main,
+  component: Main,
 };
 
 export default meta;
