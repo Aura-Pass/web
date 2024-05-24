@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Red_Hat_Display } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const redHat = Red_Hat_Display({
+  subsets: ['latin'],
+  variable: '--red-hat',
+});
 
 export const metadata: Metadata = {
   title: 'Aura Pass',
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pt-br'>
-      <body className={inter.className}>{children}</body>
+      <body className={redHat.variable}>{children}</body>
     </html>
   );
 }

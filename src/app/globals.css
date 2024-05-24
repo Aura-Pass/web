@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 body {
+  font-family: var(--red-hat);
   background: linear-gradient(90deg, #536ea7 0%, #51bac0 100%);
 }
