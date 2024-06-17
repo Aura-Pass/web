@@ -5,7 +5,9 @@ module.exports = {
     `prettier --write ${filenames
       .map((f) => path.relative(process.cwd(), f))
       .join(' ')}`,
-    `npm run lint --fix . ${filenames.join(' --file')}`,
+    `next lint --fix --file ${filenames
+      .map((f) => path.relative(process.cwd(), f))
+      .join(' --file ')}`,
     `npm test -- --findRelatedTests ${filenames.join(' ')}`,
   ],
 };
