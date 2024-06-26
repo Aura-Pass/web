@@ -11,8 +11,8 @@ export interface InputProps
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, leftIcon, rightIcon, type, ...props }, ref) => {
-    const hasError = Boolean(props.errorMessage);
+  ({ className, leftIcon, rightIcon, type, errorMessage, ...props }, ref) => {
+    const hasError = Boolean(errorMessage);
     return (
       <label className='relative block'>
         {props.label && (
@@ -43,9 +43,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           )}
         </div>
         {hasError && (
-          <p className='text-sm font-medium text-red-500'>
-            {props.errorMessage}
-          </p>
+          <p className='text-sm font-medium text-red-500'>{errorMessage}</p>
         )}
       </label>
     );

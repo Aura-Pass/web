@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import { tv, type VariantProps } from 'tailwind-variants';
 import { Slot } from '@radix-ui/react-slot';
 const button = tv({
-  base: 'flex h-12 w-full items-center justify-center gap-1 rounded-[4px] text-center font-semibold transition-all hover:brightness-90 active:brightness-75',
+  base: 'flex h-12 w-full items-center justify-center gap-1 rounded-[4px] text-center text-sm font-semibold transition-all hover:brightness-90 active:brightness-75 md:text-base',
   variants: {
     variants: {
       fill: 'bg-[#FEFDFF] text-[#111]',
