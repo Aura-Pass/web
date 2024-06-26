@@ -11,6 +11,7 @@ const redHat = Red_Hat_Display({
 export const metadata: Metadata = {
   title: 'Aura Pass',
   description: 'Aura Pass Aplication',
+  icons: '/favicon.svg',
 };
 
 export default function RootLayout({
