@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/Button';
-import { FacebookLogo } from './GoogleLogo';
+import { FacebookLogo } from './FacebookLogo';
 
 export function LoginWithFacebook() {
   return (

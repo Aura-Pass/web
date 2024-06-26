@@ -1,9 +1,12 @@
+import { cn } from '@/lib/utils';
 import { PropsWithChildren } from 'react';
 
-export function Card({ children }: PropsWithChildren) {
+type CardProps = PropsWithChildren & {
+  className?: string;
+};
+
+export function Card({ children, className }: CardProps) {
   return (
-    <div className='mx-auto max-w-[575px] rounded-2xl bg-black/95 p-10'>
-      {children}
-    </div>
+    <div className={cn('mx-auto bg-black/95 p-10', className)}>{children}</div>
   );
 }
