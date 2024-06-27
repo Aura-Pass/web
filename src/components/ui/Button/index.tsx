@@ -1,35 +1,42 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { forwardRef } from 'react';
-import { tv, type VariantProps } from 'tailwind-variants';
+import { type VariantProps } from 'tailwind-variants';
 import { Slot } from '@radix-ui/react-slot';
-const button = tv({
-  base: 'flex h-12 w-full items-center justify-center gap-1 rounded-[4px] text-center text-sm font-semibold transition-all hover:brightness-90 active:brightness-75 md:text-base',
-  variants: {
-    variants: {
-      fill: 'bg-[#FEFDFF] text-[#111]',
-      outline:
-        'rounded-lg border border-gray-200 bg-transparent hover:bg-[#FEFDFF] hover:text-[#111]',
-      inline: 'w-fit bg-none',
-    },
-  },
-  defaultVariants: {
-    variants: 'fill',
-  },
-});
+import { baseButton, brandButton, whiteButton } from './variants';
 
-type ButtonVariants = VariantProps<typeof button>;
+type ButtonVariants = VariantProps<typeof baseButton>;
+type ButtonColorsSchemes = 'brand' | 'white';
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
   ButtonVariants & {
     asChild?: boolean;
+    colorScheme?: ButtonColorsSchemes;
   };
 
+const buttonVariants: Record<ButtonColorsSchemes, (params: any) => string> = {
+  white: whiteButton,
+  brand: brandButton,
+};
+
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, asChild, ...props }, ref) => {
+  (
+    {
+      size = 'lg',
+      colorScheme = 'white',
+      className,
+      variant,
+      asChild,
+      ...props
+    },
+    ref,
+  ) => {
     const Comp = asChild ? Slot : 'button';
+    const buttonVariant = buttonVariants[colorScheme];
     return (
       <Comp
-        className={button({
-          variants: props.variants,
+        className={buttonVariant({
+          variant: variant,
+          size: size,
           class: className,
         })}
         {...props}

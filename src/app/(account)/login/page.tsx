@@ -65,13 +65,21 @@ export default function Login() {
             <Button className='mt-6'>Acessar conta</Button>
           </form>
           <div className='flex items-center justify-between'>
-            <Button variants='inline' asChild>
+            <Button
+              className='justify-start pl-0 text-left'
+              variant='text'
+              asChild
+            >
               <Link href={'/forgot-password'}>
                 <ArrowLeft />
                 Esqueceu a senha?
               </Link>
             </Button>
-            <Button variants='inline' asChild>
+            <Button
+              className='justify-end pr-0 text-right'
+              variant='text'
+              asChild
+            >
               <Link href={'/sign-up'}>
                 Criar nova conta
                 <ArrowRight />

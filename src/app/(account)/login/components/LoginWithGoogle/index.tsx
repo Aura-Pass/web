@@ -3,7 +3,7 @@ import { GoogleLogo } from './GoogleLogo';
 
 export function LoginWithGoogle() {
   return (
-    <Button variants='outline'>
+    <Button variant='outline'>
       <GoogleLogo /> Continuar com o Google
     </Button>
   );
