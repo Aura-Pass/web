@@ -11,12 +11,14 @@ export function Header() {
     <div className='w-full bg-gray-50 py-4'>
       <header className='mx-auto flex w-full max-w-[1222px] items-center justify-between'>
         <div className='flex items-center gap-6'>
-          <Image
-            src={'/logos/aura_pass.svg'}
-            alt='Aura'
-            width={126}
-            height={34}
-          />
+          <Link href={'/'}>
+            <Image
+              src={'/logos/aura_pass.svg'}
+              alt='Aura'
+              width={126}
+              height={34}
+            />
+          </Link>
           <Input
             className='border-gray-200 bg-gray-100 placeholder:text-gray-400'
             placeholder='Buscar evento...'
