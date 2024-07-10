@@ -1,21 +1,25 @@
+import { EventType } from './types';
+
 export function useEventsCarousel() {
-  const imagesEvents = [
+  const events: EventType[] = [
     {
-      src: '/banners/mock_01.png',
-      title: 'Imagem 01',
+      imgUrl: '/banners/mock_02.jpg',
+      title: 'kayblack 02',
+      address:
+        'Rua São Canuto, 500 - Jardim Santa Cruz (Campo Grande) - São Paulo - SP',
+      category: 'Audio Eventos',
+      date: '12 de maio',
+      url: 'kayblack',
     },
     {
-      src: '/banners/mock_02.jpg',
-      title: 'Imagem 04',
-    },
-    {
-      src: '/banners/mock_01.png',
-      title: 'Imagem 02',
-    },
-    {
-      src: '/banners/mock_02.jpg',
-      title: 'Imagem 03',
+      imgUrl: '/banners/mock_01.png',
+      title: 'kayblack',
+      address:
+        'Rua São Canuto, 500 - Jardim Santa Cruz (Campo Grande) - São Paulo - SP',
+      category: 'Audio Eventos',
+      date: '12 de maio',
+      url: 'kayblack',
     },
   ];
-  return { imagesEvents };
+  return { events };
 }

@@ -4,16 +4,14 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
   CarouselPagination,
   type CarouselApi,
 } from '@/components/ui/Carousel';
-import Image from 'next/image';
 import { useState } from 'react';
 import { useEventsCarousel } from './useEventsCarousel';
+import { Event } from './Event';
 export function EventsCarousel() {
-  const { imagesEvents } = useEventsCarousel();
+  const { events } = useEventsCarousel();
   const [api, setApi] = useState<CarouselApi>();
   return (
     <Carousel
@@ -32,20 +30,14 @@ export function EventsCarousel() {
       ]}
     >
       <CarouselContent>
-        {imagesEvents.map((img) => (
-          <CarouselItem key={img.title}>
-            <Image
-              width={1366}
-              height={524}
-              alt={img.title}
-              src={img.src}
-              className='mx-auto block h-[400px] xl:h-[540px] xl:w-[1366px]'
-            />
+        {events.map((event) => (
+          <CarouselItem className='peer hover:bg-red-50' key={event.title}>
+            <Event {...event} />
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {/* <CarouselPrevious />
+      <CarouselNext /> */}
       <CarouselPagination api={api} />
     </Carousel>
   );

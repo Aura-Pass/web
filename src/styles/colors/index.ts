@@ -12,4 +12,5 @@ export const colors = {
   orange,
   purple,
   red,
+  'base-white': '#FEFDFF',
 };

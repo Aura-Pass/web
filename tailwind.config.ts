@@ -21,6 +21,9 @@ const config = {
     },
     extend: {
       colors: { ...colors },
+      fontFamily: {
+        sans: ['var(--red-hat)'],
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
@@ -31,12 +34,20 @@ const config = {
           to: { height: '0' },
         },
       },
+
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       backgroundImage: {
         login: "url('/backgrounds/login_background.png')",
+        'gradient-primary': 'linear-gradient(90deg, #5174A9 0%, #22B2B4 93.5%)',
+        'gradient-light': 'linear-gradient(90deg, #62E7DE 0%, #24DBE7 100%)',
+        'event-banner-gradient':
+          'linear-gradient(270deg, rgba(0, 0, 0, 0.00) 38.4%, rgba(0, 0, 0, 0.60) 57.98%, rgba(0, 0, 0, 0.80) 68.85%, rgba(0, 0, 0, 0.90) 79.77%, #000 98.1%);',
+      },
+      boxShadow: {
+        brand: '0px 5px 10px 0px rgba(73, 187, 187, 0.30)',
       },
     },
   },
