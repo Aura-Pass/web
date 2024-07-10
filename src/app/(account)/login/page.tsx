@@ -21,7 +21,7 @@ export default function Login() {
     formState: { errors },
   } = useLogin();
   return (
-    <main className='text-[#FEFDFF]'>
+    <main className='text-base-white'>
       <Card className='grid h-screen w-full items-center rounded-none md:h-auto md:max-w-[575px] md:rounded-2xl'>
         <div>
           <Image

@@ -11,7 +11,7 @@ export function SectionHeader({ description, title }: SectionHeaderProps) {
     <div className='relative flex justify-between pl-4'>
       <div className='absolute left-0 top-[9px] h-8 w-1 bg-gradient-to-r from-[#62E7DE] to-[#24DBE7]' />
       <div className='flex flex-col'>
-        <h2 className='text-2xl font-bold text-[#FEFDFF]'>{title}</h2>
+        <h2 className='text-2xl font-bold text-base-white'>{title}</h2>
         <p className='text-base font-normal text-gray-800'>{description}</p>
       </div>
       <div className='flex items-center gap-4'>

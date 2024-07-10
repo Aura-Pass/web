@@ -1,11 +1,14 @@
 import { ColorType } from '@/styles/colors/ColorType';
 
 interface ColorItemProps {
-  color: ColorType;
+  color: ColorType | string;
   colorName: string;
 }
 
 export function ColorItem({ color, colorName }: ColorItemProps) {
+  if (typeof color === 'string') {
+    return null;
+  }
   const variants = Object.keys(color);
   return (
     <div className='text-gray-100 dark:text-white'>

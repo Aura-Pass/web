@@ -32,7 +32,7 @@ export function Header() {
             <Link href={'/about'}>Sobre nós</Link>
             <Link href={'/partner'}>Seja parceiro</Link>
           </nav>
-          <div className='mx-4 h-6 w-px bg-[#FEFDFF]' />
+          <div className='mx-4 h-6 w-px bg-base-white' />
           <div className='flex items-center gap-4'>
             <Button colorScheme='brand' variant='text' asChild>
               <Link href={'/login'}>Entrar</Link>
