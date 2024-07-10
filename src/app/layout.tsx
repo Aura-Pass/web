@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pt-br' suppressHydrationWarning>
-      <body className={`${redHat.variable} pb-4 font-sans`}>
+      <body className={`${redHat.variable} font-sans`}>
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'

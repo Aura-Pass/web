@@ -1,6 +1,7 @@
 import { EventsCarousel } from './components/EventsCarousel';
 import { EventsCategories } from './components/EventsCategories';
 import { EventsList } from './components/EventsList';
+import { PromotionalBanner } from './components/PromotionalBanner';
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
         <div className='mt-14'>
           <EventsList />
         </div>
+      </div>
+      <div className='mx-auto mt-24 w-full max-w-[1366px]'>
+        <PromotionalBanner />
       </div>
     </main>
   );
