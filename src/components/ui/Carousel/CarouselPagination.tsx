@@ -42,7 +42,7 @@ export const CarouselPagination = ({ api }: CarouselPaginationProps) => {
           key={slide}
           data-active={currentSlide === i}
           onClick={() => handleChangeSlide(i)}
-          className='size-4 cursor-pointer rounded-full border border-white transition-all data-[active="true"]:border-transparent data-[active="true"]:bg-[#62E7DE]'
+          className='size-4 cursor-pointer rounded-full bg-[#FEFDFF1A] shadow-md transition-all data-[active="true"]:border-transparent data-[active="true"]:bg-[#62E7DE]'
         />
       ))}
     </div>

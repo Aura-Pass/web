@@ -17,17 +17,17 @@ export function EventCard(props: EventCardProps) {
           alt=''
           width={286}
           height={157}
-          className='size-full object-fill transition-all group-hover/event:scale-110'
+          className='size-full object-fill transition-all'
         />
       </div>
-      <div className='mt-3 px-4 pb-5'>
-        <p className='bg-gradient-light bg-clip-text text-base font-medium text-transparent'>
+      <div className='mt-4 px-4 pb-5'>
+        <p className='mb-1 bg-gradient-light bg-clip-text text-base font-medium text-transparent'>
           {props.date}
         </p>
-        <p className='line-clamp-2 text-lg font-semibold leading-5 text-base-white'>
+        <p className='line-clamp-2 text-base font-semibold leading-5 text-base-white'>
           {props.title}
         </p>
-        <p className='mt-2 line-clamp-2 text-base font-medium leading-5 text-gray-700'>
+        <p className='mt-2 line-clamp-2 text-sm font-medium leading-5 text-gray-700'>
           {props.location}
         </p>
       </div>

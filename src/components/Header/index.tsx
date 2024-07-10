@@ -8,36 +8,44 @@ import { Button } from '../ui/Button';
 
 export function Header() {
   return (
-    <div className='w-full bg-gray-50 py-4'>
+    <div className='sticky left-0 top-0 z-40 w-full border-b border-gray-200 bg-gray-50 py-4 shadow-2xl'>
       <header className='mx-auto flex w-full max-w-[1222px] items-center justify-between'>
         <div className='flex items-center gap-6'>
           <Link href={'/'}>
             <Image
               src={'/logos/aura_pass.svg'}
               alt='Aura'
-              width={126}
-              height={34}
+              width={100}
+              height={27}
             />
           </Link>
           <Input
-            className='border-gray-200 bg-gray-100 placeholder:text-gray-400'
+            className='w-[280px] border-gray-200 bg-gray-100 transition-all placeholder:text-gray-400 hover:w-[340px] focus:w-[340px]'
             placeholder='Buscar evento...'
-            rightIcon={<MagnifyingGlass className='size-4 cursor-pointer' />}
+            rightIcon={
+              <MagnifyingGlass
+                weight='bold'
+                className='size-4 cursor-pointer'
+              />
+            }
           />
         </div>
         <div className='flex items-center'>
           <SelectState />
           <nav className='ml-8 flex items-center gap-8 whitespace-nowrap'>
-            <Link href={'/explore'}>Explorar</Link>
-            <Link href={'/about'}>Sobre nós</Link>
-            <Link href={'/partner'}>Seja parceiro</Link>
+            <Button asChild size='md' variant='text' className='px-0'>
+              <Link href={'/about'}>Sobre nós</Link>
+            </Button>
+            <Button asChild size='md' variant='text' className='px-0'>
+              <Link href={'/partner'}>Seja parceiro</Link>
+            </Button>
           </nav>
-          <div className='mx-4 h-6 w-px bg-base-white' />
-          <div className='flex items-center gap-4'>
-            <Button colorScheme='brand' variant='text' asChild>
+          <div className='mx-6 h-6 w-px bg-base-white' />
+          <div className='flex items-center gap-6'>
+            <Button size='md' colorScheme='brand' variant='text' asChild>
               <Link href={'/login'}>Entrar</Link>
             </Button>
-            <Button colorScheme='brand' variant='outline' asChild>
+            <Button size='md' colorScheme='brand' variant='outline' asChild>
               <Link href={'/register'}>Cadastre-se</Link>
             </Button>
           </div>

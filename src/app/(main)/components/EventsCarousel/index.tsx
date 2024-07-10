@@ -4,7 +4,9 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
   CarouselPagination,
+  CarouselPrevious,
   type CarouselApi,
 } from '@/components/ui/Carousel';
 import { useState } from 'react';
@@ -16,7 +18,7 @@ export function EventsCarousel() {
   return (
     <Carousel
       setApi={setApi}
-      className='mx-auto w-full max-w-[1366px]'
+      className='mx-auto w-full rounded-2xl'
       opts={{
         loop: true,
         align: 'center',
@@ -29,15 +31,15 @@ export function EventsCarousel() {
         }),
       ]}
     >
-      <CarouselContent>
+      <CarouselContent className='rounded-2xl'>
         {events.map((event) => (
-          <CarouselItem className='peer hover:bg-red-50' key={event.title}>
+          <CarouselItem className='rounded-2xl' key={event.title}>
             <Event {...event} />
           </CarouselItem>
         ))}
       </CarouselContent>
-      {/* <CarouselPrevious />
-      <CarouselNext /> */}
+      <CarouselPrevious className='-left-16' />
+      <CarouselNext className='-right-16' />
       <CarouselPagination api={api} />
     </Carousel>
   );

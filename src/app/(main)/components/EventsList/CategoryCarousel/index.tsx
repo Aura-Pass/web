@@ -17,9 +17,9 @@ export function CategoryCarousel({
   const { events } = useCategoryCarousel(category);
 
   return (
-    <Carousel className='w-full'>
+    <Carousel className='w-full' opts={{ slidesToScroll: 3, align: 'start' }}>
       <SectionHeader title={title} description={description} />
-      <CarouselContent className='mt-9'>
+      <CarouselContent className='-ml-6 mt-9'>
         {events.map((category) => (
           <CarouselItem className='basis-[312px] pl-6' key={category.id}>
             <EventCard {...category} />

@@ -8,7 +8,7 @@ export const baseButton = tv({
     'gap-2',
     'whitespace-nowrap',
     'rounded-[4px]',
-    'px-6',
+
     'text-center',
     'font-semibold',
     'transition-all',
@@ -17,9 +17,9 @@ export const baseButton = tv({
   ],
   variants: {
     variant: {
-      fill: '',
-      outline: '',
-      text: '',
+      fill: 'px-6',
+      outline: 'px-6',
+      text: 'px-0',
     },
     size: {
       lg: 'py-3 text-base',

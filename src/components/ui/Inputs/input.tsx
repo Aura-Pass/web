@@ -28,7 +28,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             data-error={hasError}
             type={type}
             className={cn(
-              'flex h-12 w-full border bg-transparent border-gray-400 px-4 py-[14px] rounded-[4px] placeholder:text-gray-600 font-medium data-[error="true"]:border-red-500 leading-[48px]',
+              'flex h-10 w-full border bg-transparent border-gray-400 px-4 py-[14px] rounded-[4px] placeholder:text-gray-600 text-sm font-medium data-[error="true"]:border-red-500 leading-[48px] outline-none focus:border-base-white',
               leftIcon ? 'pl-10' : '',
               rightIcon ? 'pr-10' : '',
               className,

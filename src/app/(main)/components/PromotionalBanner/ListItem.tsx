@@ -7,7 +7,7 @@ type ListItemProps = {
 
 export function ListItem(props: ListItemProps) {
   return (
-    <div className='flex gap-4 text-base-white'>
+    <div className='flex items-center gap-4 text-base-white'>
       <div className='grid size-12 place-items-center rounded-lg border border-base-white text-2xl'>
         {props.icon}
       </div>

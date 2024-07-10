@@ -52,6 +52,22 @@ export function useCategoryCarousel(category: Category) {
       location: 'Audio Eventos E - São Paulo, SP',
       id: '6',
     },
+    {
+      imageUrl: '/banners/mock_01.png',
+      category: '',
+      date: 'SAB, 17 AGO • 16:00',
+      title: 'Quintaneja: A queridinha está de volta',
+      location: 'Audio Eventos E - São Paulo, SP',
+      id: '7',
+    },
+    {
+      imageUrl: '/banners/mock_02.jpg',
+      category: '',
+      date: 'SAB, 17 AGO • 16:00',
+      title: 'Quintaneja: A queridinha está de volta',
+      location: 'Audio Eventos E - São Paulo, SP',
+      id: '8',
+    },
   ];
 
   return {

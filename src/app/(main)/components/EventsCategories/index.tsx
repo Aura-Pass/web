@@ -11,14 +11,20 @@ import { CategoryCard } from './CategoryCard';
 export function EventsCategories() {
   const { categories } = useCategories();
   return (
-    <Carousel className='w-full'>
+    <Carousel
+      className='w-full'
+      opts={{
+        slidesToScroll: 4,
+        align: 'start',
+      }}
+    >
       <SectionHeader
         title='Categorias'
         description='Busque por eventos específicos'
       />
-      <CarouselContent className='-ml-10 mt-9'>
+      <CarouselContent className='-ml-6 mt-9'>
         {categories.map((category) => (
-          <CarouselItem className='basis-[265px] pl-10' key={category.url}>
+          <CarouselItem className='basis-[249px] pl-6' key={category.url}>
             <CategoryCard {...category} />
           </CarouselItem>
         ))}
