@@ -21,7 +21,7 @@ export function CategoryCarousel({
       <SectionHeader title={title} description={description} />
       <CarouselContent className='-ml-6 mt-9'>
         {events.map((category) => (
-          <CarouselItem className='basis-[312px] pl-6' key={category.id}>
+          <CarouselItem className='basis-[310px] pl-6' key={category.id}>
             <EventCard {...category} />
           </CarouselItem>
         ))}

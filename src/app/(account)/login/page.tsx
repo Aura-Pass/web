@@ -1,7 +1,6 @@
 'use client';
 import { Input } from '@/components/ui/Inputs/input';
 import { Button } from '@/components/ui/Button';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight } from '@phosphor-icons/react/dist/ssr';
 import { Divider } from '@/components/ui/Divider';
@@ -22,25 +21,12 @@ export default function Login() {
   } = useLogin();
   return (
     <main className='text-base-white'>
-      <Card className='grid h-screen w-full items-center rounded-none md:h-auto md:max-w-[575px] md:rounded-2xl'>
+      <Card
+        description='Se você já possui uma conta, preencha seus dados de acesso à plataforma.'
+        title='Acesse sua conta'
+      >
         <div>
-          <Image
-            className='mx-auto md:mx-0'
-            alt='AURA'
-            src={'/logos/aura_pass.svg'}
-            width={154}
-            height={42}
-          />
-          <div className='text-center md:text-left'>
-            <h1 className='mt-6 text-xl font-bold md:text-2xl'>
-              Acesse sua conta
-            </h1>
-            <p className='text-sm font-normal md:text-base'>
-              Se você já possui uma conta, preencha seus dados de acesso à
-              plataforma.
-            </p>
-          </div>
-          <form onSubmit={handleSubmit(handleMakeLogin)} className='mt-6'>
+          <form onSubmit={handleSubmit(handleMakeLogin)}>
             <div className='mb-4'>
               <Input
                 type='email'

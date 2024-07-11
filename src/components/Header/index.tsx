@@ -1,10 +1,9 @@
 'use client';
 import Image from 'next/image';
-import { Input } from '../ui/Inputs/input';
-import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr';
 import { SelectState } from './SelectState';
 import Link from 'next/link';
 import { Button } from '../ui/Button';
+import { SearchEvent } from './SearchEvent';
 
 export function Header() {
   return (
@@ -19,16 +18,7 @@ export function Header() {
               height={27}
             />
           </Link>
-          <Input
-            className='w-[280px] border-gray-200 bg-gray-100 transition-all placeholder:text-gray-400 hover:w-[340px] focus:w-[340px]'
-            placeholder='Buscar evento...'
-            rightIcon={
-              <MagnifyingGlass
-                weight='bold'
-                className='size-4 cursor-pointer'
-              />
-            }
-          />
+          <SearchEvent />
         </div>
         <div className='flex items-center'>
           <SelectState />
