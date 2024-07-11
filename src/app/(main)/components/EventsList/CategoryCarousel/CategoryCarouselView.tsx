@@ -14,7 +14,7 @@ type CategoryCarouselProps = {
   title: string;
 };
 
-export async function CategoryCarouselView({
+export function CategoryCarouselView({
   events,
   description,
   title,

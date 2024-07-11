@@ -1,3 +1,4 @@
+'use client';
 import { Input } from '@/components/ui/Inputs/input';
 import { Card } from '../components/Card';
 import { PasswordInput } from '@/components/PasswordInput';

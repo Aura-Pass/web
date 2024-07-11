@@ -48,7 +48,7 @@ export default function Login() {
               )}
             />
 
-            <Button className='mt-6'>Acessar conta</Button>
+            <Button className='mt-6 w-full'>Acessar conta</Button>
           </form>
           <div className='flex items-center justify-between'>
             <Button
