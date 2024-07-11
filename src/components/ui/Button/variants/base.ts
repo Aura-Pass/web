@@ -8,12 +8,12 @@ export const baseButton = tv({
     'gap-2',
     'whitespace-nowrap',
     'rounded-[4px]',
-
     'text-center',
     'font-semibold',
     'transition-all',
     'disabled:cursor-not-allowed',
     'disabled:opacity-50',
+    'duration-300',
   ],
   variants: {
     variant: {

@@ -5,7 +5,7 @@ import { states } from './states';
 export function SelectState() {
   return (
     <Select.Root>
-      <Select.Trigger>
+      <Select.Trigger className='border-none'>
         <MapPin weight='bold' className='mr-1 size-4' />
         <Select.Value className='bg-none' placeholder='Estado' />
       </Select.Trigger>

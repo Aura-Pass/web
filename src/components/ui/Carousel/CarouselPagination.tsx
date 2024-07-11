@@ -36,13 +36,13 @@ export const CarouselPagination = ({ api }: CarouselPaginationProps) => {
 
   if (!api) return null;
   return (
-    <div className='absolute bottom-6 left-1/2 flex items-center gap-2'>
+    <div className='absolute bottom-6 left-1/2 flex -translate-x-1/2 items-center gap-2'>
       {slides.map((slide, i) => (
         <button
           key={slide}
           data-active={currentSlide === i}
           onClick={() => handleChangeSlide(i)}
-          className='size-4 cursor-pointer rounded-full bg-[#FEFDFF1A] shadow-md transition-all data-[active="true"]:border-transparent data-[active="true"]:bg-[#62E7DE]'
+          className='size-[10px] cursor-pointer rounded-full bg-[#FEFDFF1A] shadow-md transition-all data-[active="true"]:border-transparent data-[active="true"]:bg-[#62E7DE]'
         />
       ))}
     </div>

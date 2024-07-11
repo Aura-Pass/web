@@ -22,6 +22,7 @@ export default function Login() {
   return (
     <main className='text-base-white'>
       <Card
+        className='max-w-[575px]'
         description='Se você já possui uma conta, preencha seus dados de acesso à plataforma.'
         title='Acesse sua conta'
       >

@@ -11,6 +11,7 @@ export default function Register() {
       <Card
         description='Informe os dados abaixo para criar a sua conta na Aura Pass.'
         title='Crie a sua conta'
+        className='lg:max-w-[720px]'
       >
         <form className='block w-full'>
           <div className='flex flex-col gap-4'>

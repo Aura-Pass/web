@@ -3,7 +3,7 @@ import { EventCategory } from './types';
 export const categories: EventCategory[] = [
   {
     title: 'Eventos em alta',
-    description: 'Confira os destaques da nossa paltaforma',
+    description: 'Confira os destaques da nossa plataforma',
     category: 'trending',
   },
   {

@@ -21,6 +21,9 @@ const config = {
     },
     extend: {
       colors: { ...colors },
+      fontWeight: {
+        semibold: '650',
+      },
       fontFamily: {
         sans: ['var(--red-hat)'],
       },

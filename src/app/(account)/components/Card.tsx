@@ -12,7 +12,7 @@ export function Card({ children, description, title, className }: CardProps) {
   return (
     <div
       className={cn(
-        'mx-auto bg-black/95 p-10 grid h-screen w-full items-center rounded-none md:h-auto md:max-w-[575px] md:rounded-2xl lg:max-w-[720px]',
+        'mx-auto bg-black/95 p-10 grid h-screen w-full items-center rounded-none md:h-auto md:max-w-[575px] md:rounded-2xl',
         className,
       )}
     >
