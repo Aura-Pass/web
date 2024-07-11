@@ -3,39 +3,29 @@ import { Category } from './types';
 export function useCategories() {
   const categories: Category[] = [
     {
-      imageUrl: '/categories/category_mock.jpg',
+      imageUrl: '/assets/categories/festivais.jpg',
       name: 'Festivais',
       url: 'festivais',
     },
     {
-      imageUrl: '/categories/category_mock.jpg',
+      imageUrl: '/assets/categories/festas_e_shows.jpg',
       name: 'Festas & Shows',
       url: 'festivais',
     },
     {
-      imageUrl: '/categories/category_mock.jpg',
+      imageUrl: '/assets/categories/teatros_e_shows.jpg',
       name: 'Teatros e espetáculos',
       url: 'festivais',
     },
     {
-      imageUrl: '/categories/category_mock.jpg',
+      imageUrl: '/assets/categories/cursos_e_workshops.jpg',
       name: 'Cursos e Workshops',
       url: 'festivais',
     },
     {
-      imageUrl: '/categories/category_mock.jpg',
+      imageUrl: '/assets/categories/gastronomia.jpg',
       name: 'Gastronomia',
       url: 'festivais',
-    },
-    {
-      imageUrl: '/categories/category_mock.jpg',
-      name: 'Mock',
-      url: 'mock',
-    },
-    {
-      imageUrl: '/categories/category_mock.jpg',
-      name: 'Mock 2',
-      url: 'mock2',
     },
   ];
 
