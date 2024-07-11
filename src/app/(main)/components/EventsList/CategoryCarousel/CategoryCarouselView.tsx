@@ -5,17 +5,20 @@ import {
   CarouselItem,
 } from '@/components/ui/Carousel';
 import { SectionHeader } from '../../SectionHeader';
-import { EventCategory } from '../typex';
-import { useCategoryCarousel } from './useCategoryCarousel';
 import { EventCard } from '@/components/EventCard';
+import { Event } from '@/components/EventCard/types';
 
-export function CategoryCarousel({
-  category,
+type CategoryCarouselProps = {
+  events: Event[];
+  description: string;
+  title: string;
+};
+
+export async function CategoryCarouselView({
+  events,
   description,
   title,
-}: EventCategory) {
-  const { events } = useCategoryCarousel(category);
-
+}: CategoryCarouselProps) {
   return (
     <Carousel className='w-full' opts={{ slidesToScroll: 3, align: 'start' }}>
       <SectionHeader title={title} description={description} />

@@ -32,10 +32,22 @@ export function Header() {
           </nav>
           <div className='mx-6 h-6 w-px bg-base-white' />
           <div className='flex items-center gap-6'>
-            <Button size='md' colorScheme='brand' variant='text' asChild>
+            <Button
+              className='font-bold'
+              size='md'
+              colorScheme='brand'
+              variant='text'
+              asChild
+            >
               <Link href={'/login'}>Entrar</Link>
             </Button>
-            <Button size='md' colorScheme='brand' variant='outline' asChild>
+            <Button
+              className='font-bold'
+              size='md'
+              colorScheme='brand'
+              variant='outline'
+              asChild
+            >
               <Link href={'/register'}>Cadastre-se</Link>
             </Button>
           </div>

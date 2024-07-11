@@ -4,11 +4,14 @@ import * as React from 'react';
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react';
-import { ArrowCircleLeft, ArrowCircleRight } from '@phosphor-icons/react';
 
 import { cn } from '@/lib/utils';
 import { Button } from './Button';
 import { CarouselPagination } from './CarouselPagination';
+import {
+  CaretCircleLeft,
+  CaretCircleRight,
+} from '@phosphor-icons/react/dist/ssr';
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
 type CarouselOptions = UseCarouselParameters[0];
@@ -214,7 +217,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowCircleLeft weight='light' className='size-10' />
+      <CaretCircleLeft weight='thin' className='size-10' />
       <span className='sr-only'>Previous slide</span>
     </Button>
   );
@@ -241,7 +244,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <ArrowCircleRight weight='light' className='size-10' />
+      <CaretCircleRight weight='thin' className='size-10' />
       <span className='sr-only'>Next slide</span>
     </Button>
   );

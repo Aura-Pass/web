@@ -1,4 +1,4 @@
-import { CategoryCarousel } from './CategoryCarousel';
+import { CategorCarouselModel } from './CategoryCarousel/CategoryCarouselModel';
 import { categories } from './constants';
 
 export function EventsList() {
@@ -6,7 +6,7 @@ export function EventsList() {
     <section>
       <div className='flex flex-col gap-14'>
         {categories.map((category) => (
-          <CategoryCarousel key={category.category} {...category} />
+          <CategorCarouselModel key={category.category} {...category} />
         ))}
       </div>
     </section>
