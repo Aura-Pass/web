@@ -14,6 +14,12 @@ export const baseButton = tv({
     'disabled:cursor-not-allowed',
     'disabled:opacity-50',
     'duration-300',
+    'border',
+    'border-transparent',
+    'after:transition-all',
+    'before:transition-all',
+    'relative',
+    'overflow-hidden',
   ],
   variants: {
     variant: {
