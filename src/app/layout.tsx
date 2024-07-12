@@ -9,7 +9,7 @@ const redHat = Red_Hat_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Aura Pass',
+  title: 'Aura Pass - Ingressos para eventos, teatros, shows e muito mais',
   description:
     'O Aura Pass é a plataforma online de eventos mais modernizada do Brasil. Shows, festas, teatros, stand up, cursos e muito mais. Encontre e organize eventos com o Aura Pass!',
   icons: '/favicon.svg',
@@ -54,6 +54,10 @@ export const metadata: Metadata = {
     title: 'Aura Pass',
     description:
       'Os melhores eventos e conteúdos online estão no Aura Pass. Teatros, festas, shows, eventos corporativos, gastronômicos e muito mais. Garanta seu ingresso!',
+    images: 'https://i.imgur.com/ZswN2M3.png',
+  },
+  twitter: {
+    images: 'https://i.imgur.com/sPxmdqN.png',
   },
 };
 
