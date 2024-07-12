@@ -20,7 +20,7 @@ export function Event(props: EventProps) {
           <div>
             <div
               aria-description='Data do evento'
-              className='mb-2 w-fit rounded-full bg-gradient-light px-4 py-[2px] text-lg font-bold text-gray-50'
+              className='mb-2 w-fit rounded-full bg-gradient-light px-4 py-[2px] text-lg font-bold text-neutral-1000'
             >
               {props.date}
             </div>

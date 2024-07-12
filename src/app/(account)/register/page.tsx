@@ -17,7 +17,7 @@ export default function Register() {
           <div className='flex flex-col gap-4'>
             <Input label='E-mail' />
             <PasswordInput label='Senha' />
-            <div className='h-px bg-gray-400' />
+            <div className='h-px bg-neutral-600' />
             <div className='grid w-full grid-cols-2 gap-4'>
               <Input label='Nome' className='w-full' />
               <Input label='Sobrenome' className='w-full' />
@@ -43,7 +43,7 @@ export default function Register() {
               Entrar com conta Aura
             </Link>
           </p>
-          <div className='my-6 h-px bg-gray-400' />
+          <div className='my-6 h-px bg-neutral-600' />
           <p className='text-center text-sm font-medium'>
             Ao me cadastrar, concordo com os Termos de Uso e Política de
             Privacidade Aura Pass

@@ -6,7 +6,7 @@ type DividerProps = HTMLAttributes<HTMLDivElement>;
 export function Divider(props: DividerProps) {
   return (
     <div
-      className={cn('h-px w-full bg-gray-400', props.className)}
+      className={cn('h-px w-full bg-neutral-600', props.className)}
       {...props}
     />
   );

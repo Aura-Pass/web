@@ -11,7 +11,7 @@ export function ColorItem({ color, colorName }: ColorItemProps) {
   }
   const variants = Object.keys(color);
   return (
-    <div className='text-gray-100 dark:text-white'>
+    <div className='text-neutral-900 dark:text-white'>
       <p className='mb-2 font-bold uppercase'>{colorName}</p>
       <div className='flex gap-4'>
         {variants.map((key) => (

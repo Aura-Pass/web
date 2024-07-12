@@ -28,7 +28,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             data-error={hasError}
             type={type}
             className={cn(
-              'flex h-10 w-full border bg-transparent border-gray-400 px-4 py-[14px] rounded-[4px] placeholder:text-gray-600 text-sm font-medium data-[error="true"]:border-red-500 leading-[48px] outline-none focus:border-base-white',
+              'flex h-10 w-full border bg-transparent border-neutral-600 px-4 py-[14px] rounded-[4px] placeholder:text-neutral-400 text-sm font-medium data-[error="true"]:border-danger-500 leading-[48px] outline-none focus:border-base-white',
               leftIcon ? 'pl-10' : '',
               rightIcon ? 'pr-10' : '',
               className,
@@ -43,7 +43,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           )}
         </div>
         {hasError && (
-          <p className='text-sm font-medium text-red-500'>{errorMessage}</p>
+          <p className='text-sm font-medium text-danger-500'>{errorMessage}</p>
         )}
       </label>
     );

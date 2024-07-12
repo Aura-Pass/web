@@ -1,16 +1,17 @@
 import { brand } from './brand';
-import { gray } from './gray';
-import { green } from './green';
-import { orange } from './orange';
-import { purple } from './purple';
-import { red } from './red';
+import { neutral } from './neutral';
+import { success } from './success';
+import { warning } from './warning';
+import { info } from './purple';
+import { danger } from './danger';
 
 export const colors = {
   brand,
-  gray,
-  green,
-  orange,
-  purple,
-  red,
+  neutral,
+  success,
+  warning,
+  info,
+  danger,
   'base-white': '#FFFFFF',
+  'base-black': '#010101',
 };

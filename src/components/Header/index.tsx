@@ -7,7 +7,7 @@ import { SearchEvent } from './SearchEvent';
 
 export function Header() {
   return (
-    <div className='sticky left-0 top-0 z-40 w-full border-b border-gray-200 bg-gray-50 py-4 shadow-2xl'>
+    <div className='sticky left-0 top-0 z-40 w-full border-b border-neutral-800 bg-neutral-1000 py-4 shadow-2xl'>
       <header className='mx-auto flex w-full max-w-[1222px] items-center justify-between'>
         <div className='flex items-center gap-6'>
           <Link href={'/'}>

@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 export function PromotionalBanner() {
   return (
-    <section className='relative rounded-3xl border border-gray-200 bg-gray-50 py-14 pl-24'>
+    <section className='relative rounded-3xl border border-neutral-800 bg-neutral-1000 py-14 pl-24'>
       <div>
         <Image
           src={'/logos/aura_pass.svg'}

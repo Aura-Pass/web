@@ -14,7 +14,7 @@ export function SectionHeader({ description, title }: SectionHeaderProps) {
         <h2 className='text-xl font-bold leading-none text-base-white'>
           {title}
         </h2>
-        <p className='text-base font-normal leading-none text-gray-800'>
+        <p className='text-base font-normal leading-none text-neutral-200'>
           {description}
         </p>
       </div>

@@ -9,7 +9,7 @@ export function EventCard(props: EventCardProps) {
   return (
     <Link
       href={url}
-      className='group/event block h-80 w-full rounded-2xl border-[1.5px] border-gray-200 bg-gray-50 transition-all duration-300 hover:border-[#62E7DE] hover:shadow-brand'
+      className='group/event block h-80 w-full rounded-2xl border-[1.5px] border-neutral-800 bg-neutral-1000 transition-all duration-300 hover:border-[#62E7DE] hover:shadow-brand'
     >
       <div className='h-[157px] w-full overflow-hidden rounded-t-2xl'>
         <Image
@@ -27,7 +27,7 @@ export function EventCard(props: EventCardProps) {
         <p className='line-clamp-2 text-base font-semibold leading-5 text-base-white'>
           {props.title}
         </p>
-        <p className='mt-2 line-clamp-2 text-sm font-medium leading-5 text-gray-700'>
+        <p className='mt-2 line-clamp-2 text-sm font-medium leading-5 text-neutral-300'>
           {props.location}
         </p>
       </div>

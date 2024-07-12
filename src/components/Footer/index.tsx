@@ -5,7 +5,7 @@ import { Envelope, MapPin, Phone } from '@phosphor-icons/react/dist/ssr';
 
 export function Footer() {
   return (
-    <footer className='mt-36 w-full bg-gray-50 px-[72px] py-12 pb-8'>
+    <footer className='mt-36 w-full bg-neutral-1000 px-[72px] py-12 pb-8'>
       <div className='mx-auto w-full max-w-[1222px]'>
         <div className='flex  justify-between'>
           <div>
