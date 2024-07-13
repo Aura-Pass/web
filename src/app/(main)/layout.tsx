@@ -1,5 +1,6 @@
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
+import { MenuMobile } from '@/components/MenuMobile';
 
 export default function LandingPageLayout({
   children,
@@ -11,6 +12,7 @@ export default function LandingPageLayout({
       <Header />
       {children}
       <Footer />
+      <MenuMobile />
     </>
   );
 }

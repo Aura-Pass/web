@@ -12,7 +12,7 @@ export function EventsCategories() {
   const { categories } = useCategories();
   return (
     <Carousel
-      className='w-full'
+      className='w-full pl-5 sm:pl-0'
       opts={{
         slidesToScroll: 4,
         align: 'start',
@@ -22,9 +22,12 @@ export function EventsCategories() {
         title='Categorias'
         description='Busque por eventos específicos'
       />
-      <CarouselContent className='-ml-6 mt-9'>
+      <CarouselContent className='-ml-4 mt-6 sm:-ml-6 sm:mt-9'>
         {categories.map((category) => (
-          <CarouselItem className='basis-[249px] pl-6' key={category.url}>
+          <CarouselItem
+            className='basis-[175px] pl-4 sm:basis-[249px] sm:pl-6'
+            key={category.url}
+          >
             <CategoryCard {...category} />
           </CarouselItem>
         ))}
