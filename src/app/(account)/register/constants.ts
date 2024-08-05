@@ -12,7 +12,11 @@ export const genders: Option<Gender>[] = [
   },
   {
     label: 'Não binário',
-    value: 'NON_BINARY',
+    value: 'NONBINARY',
+  },
+  {
+    label: 'Prefiro não dizer',
+    value: 'PREFERNOTTOSAY',
   },
   {
     label: 'Outro',

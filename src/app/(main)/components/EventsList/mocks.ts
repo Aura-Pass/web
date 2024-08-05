@@ -1,4 +1,4 @@
-import { Event } from '@/components/EventCard/types';
+import { Event } from '@/shared/EventCard/types';
 import { Category } from './types';
 
 export const eventsByCategoryMock: { [key in Category]: Event[] } = {

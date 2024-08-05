@@ -5,8 +5,8 @@ import {
   CarouselItem,
 } from '@/components/ui/Carousel';
 import { SectionHeader } from '../../SectionHeader';
-import { EventCard } from '@/components/EventCard';
-import { Event } from '@/components/EventCard/types';
+import { EventCard } from '@/shared/EventCard';
+import { Event } from '@/shared/EventCard/types';
 
 type CategoryCarouselProps = {
   events: Event[];
@@ -26,8 +26,7 @@ export function CategoryCarouselView({
         {events.map((category) => (
           <CarouselItem
             className='basis-[175px] pl-4 sm:basis-[310px] sm:pl-6'
-            key={category.id}
-          >
+            key={category.id}>
             <EventCard {...category} />
           </CarouselItem>
         ))}

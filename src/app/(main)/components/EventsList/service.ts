@@ -1,4 +1,4 @@
-import { Event } from '@/components/EventCard/types';
+import { Event } from '@/shared/EventCard/types';
 import { Category } from './types';
 import { eventsByCategoryMock } from './mocks';
 

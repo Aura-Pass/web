@@ -7,3 +7,9 @@
     @apply bg-gradient-to-r from-[#5174A9] to-[#22B2B4] bg-clip-text text-transparent;
   }
 }
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 16px;
+}

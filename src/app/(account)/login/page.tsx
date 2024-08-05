@@ -3,7 +3,7 @@ import { Input } from '@/components/ui/Inputs/input';
 import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight } from '@phosphor-icons/react/dist/ssr';
-import { Divider } from '@/components/ui/Divider';
+import { Divider } from '@/components/Divider';
 import { LoginWithGoogle } from './components/LoginWithGoogle';
 import { LoginWithFacebook } from './components/LoginWithFacebook';
 import { PasswordInput } from '@/components/PasswordInput';
@@ -24,8 +24,7 @@ export default function Login() {
       <Card
         className='max-w-[575px]'
         description='Se você já possui uma conta, preencha seus dados de acesso à plataforma.'
-        title='Acesse sua conta'
-      >
+        title='Acesse sua conta'>
         <div>
           <form onSubmit={handleSubmit(handleMakeLogin)}>
             <div className='mb-4'>
@@ -55,8 +54,7 @@ export default function Login() {
             <Button
               className='justify-start pl-0 text-left'
               variant='text'
-              asChild
-            >
+              asChild>
               <Link href={'/forgot-password'}>
                 <ArrowLeft />
                 Esqueceu a senha?
@@ -65,8 +63,7 @@ export default function Login() {
             <Button
               className='justify-end pr-0 text-right'
               variant='text'
-              asChild
-            >
+              asChild>
               <Link href={'/sign-up'}>
                 Criar nova conta
                 <ArrowRight />
