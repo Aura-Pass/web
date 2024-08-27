@@ -9,7 +9,7 @@ import { LoginWithFacebook } from './components/LoginWithFacebook';
 import { PasswordInput } from '@/components/PasswordInput';
 import { useLogin } from './useLogin';
 import { Controller } from 'react-hook-form';
-import { Card } from '../components/Card';
+import Image from 'next/image';
 
 export default function Login() {
   const {
@@ -21,10 +21,22 @@ export default function Login() {
   } = useLogin();
   return (
     <main className='text-base-white'>
-      <Card
-        className='max-w-[575px]'
-        description='Se você já possui uma conta, preencha seus dados de acesso à plataforma.'
-        title='Acesse sua conta'>
+      <div className='flex min-h-screen w-full flex-col justify-center bg-neutral-900 px-5 pb-11 pt-5 sm:mx-auto sm:min-h-0 sm:max-w-[720px] sm:rounded-2xl sm:p-10'>
+        <Image
+          className=''
+          alt='AURA'
+          src={'/logos/aura_pass.svg'}
+          width={154}
+          height={42}
+        />
+        <div className='mb-6 text-left md:text-left'>
+          <h1 className='mt-6 text-xl font-bold md:text-2xl'>
+            Crie a sua conta
+          </h1>
+          <p className='text-sm font-normal md:text-base'>
+            Informe os dados abaixo para criar a sua conta na Aura Pass.
+          </p>
+        </div>
         <div>
           <form onSubmit={handleSubmit(handleMakeLogin)}>
             <div className='mb-4'>
@@ -76,7 +88,7 @@ export default function Login() {
             <LoginWithFacebook />
           </div>
         </div>
-      </Card>
+      </div>
     </main>
   );
 }

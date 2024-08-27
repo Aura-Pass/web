@@ -1,6 +1,5 @@
 'use client';
 import { Input } from '@/components/ui/Inputs/input';
-import { Card } from '../components/Card';
 import { PasswordInput } from '@/components/PasswordInput';
 import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
@@ -12,6 +11,7 @@ import { Controller } from 'react-hook-form';
 import { InputDate } from '@/components/ui/Inputs/InputDate';
 import { onChangeDateInput } from '@/utils/onChangeDateInput';
 import { useHookFormMask } from 'use-mask-input';
+import Image from 'next/image';
 export default function Register() {
   const { form, onSubmitRegisterForm } = useRegisterForm();
   const registerWithMask = useHookFormMask(form.register);
@@ -21,11 +21,23 @@ export default function Register() {
     formState: { errors },
   } = form;
   return (
-    <main>
-      <Card
-        description='Informe os dados abaixo para criar a sua conta na Aura Pass.'
-        title='Crie a sua conta'
-        className='lg:max-w-[720px]'>
+    <main className='sm:py-5'>
+      <div className='min-h-screen bg-neutral-900 px-5 pb-11 pt-5 sm:mx-auto sm:min-h-0 sm:max-w-[720px] sm:rounded-2xl sm:p-10'>
+        <Image
+          className=''
+          alt='AURA'
+          src={'/logos/aura_pass.svg'}
+          width={154}
+          height={42}
+        />
+        <div className='mb-6 text-left md:text-left'>
+          <h1 className='mt-6 text-xl font-bold md:text-2xl'>
+            Crie a sua conta
+          </h1>
+          <p className='text-sm font-normal md:text-base'>
+            Informe os dados abaixo para criar a sua conta na Aura Pass.
+          </p>
+        </div>
         <form onSubmit={onSubmitRegisterForm} className='block w-full'>
           <div className='flex flex-col gap-4'>
             <Input
@@ -45,7 +57,7 @@ export default function Register() {
               )}
             />
             <div className='h-px bg-neutral-600' />
-            <div className='grid w-full grid-cols-2 gap-4'>
+            <div className='grid w-full grid-cols-1 gap-4 sm:grid-cols-2'>
               <Input
                 label='Nome'
                 errorMessage={errors.name?.message}
@@ -59,7 +71,7 @@ export default function Register() {
                 {...register('surname')}
               />
             </div>
-            <div className='grid w-full grid-cols-2 gap-4'>
+            <div className='grid w-full grid-cols-1 gap-4 sm:grid-cols-2'>
               <Input
                 label='CPF'
                 errorMessage={errors.document?.message}
@@ -78,7 +90,7 @@ export default function Register() {
                 )}
               />
             </div>
-            <div className='grid w-full grid-cols-2 gap-4'>
+            <div className='grid w-full grid-cols-1 gap-4 sm:grid-cols-2'>
               <Input
                 label='Número (Whatsapp)'
                 errorMessage={errors.phone?.message}
@@ -134,7 +146,7 @@ export default function Register() {
             Privacidade Aura Pass
           </p>
         </form>
-      </Card>
+      </div>
     </main>
   );
 }
