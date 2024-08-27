@@ -68,12 +68,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pt-br' suppressHydrationWarning>
-      <body className={`${redHat.variable} font-sans`}>
+      <body className={`${redHat.variable} min-h-screen font-sans`}>
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
-          disableTransitionOnChange
-        >
+          disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>
