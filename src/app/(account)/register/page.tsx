@@ -11,9 +11,10 @@ import { useRegisterForm } from './useRegisterForm';
 import { Controller } from 'react-hook-form';
 import { InputDate } from '@/components/ui/Inputs/InputDate';
 import { onChangeDateInput } from '@/utils/onChangeDateInput';
-
+import { useHookFormMask } from 'use-mask-input';
 export default function Register() {
   const { form, onSubmitRegisterForm } = useRegisterForm();
+  const registerWithMask = useHookFormMask(form.register);
   const {
     register,
     control,
@@ -62,7 +63,7 @@ export default function Register() {
               <Input
                 label='CPF'
                 errorMessage={errors.document?.message}
-                {...register('document')}
+                {...registerWithMask('document', '999.999.999-99')}
               />
               <Controller
                 control={control}
@@ -81,7 +82,10 @@ export default function Register() {
               <Input
                 label='Número (Whatsapp)'
                 errorMessage={errors.phone?.message}
-                {...register('phone')}
+                {...registerWithMask('phone', [
+                  '(99) 99999-9999',
+                  '+99 (99) 99999-9999',
+                ])}
               />
               <div>
                 <Label>Gênero</Label>
