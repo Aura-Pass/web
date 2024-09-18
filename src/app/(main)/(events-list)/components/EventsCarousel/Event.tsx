@@ -20,8 +20,7 @@ export function Event(props: EventProps) {
           <div>
             <div
               aria-description='Data do evento'
-              className='mb-2 w-fit rounded-full bg-gradient-light px-4 py-[2px] text-lg font-bold text-neutral-1000'
-            >
+              className='mb-2 w-fit rounded-full bg-gradient-light px-4 py-[2px] text-lg font-bold text-neutral-1000'>
               {props.date}
             </div>
             <p className='text-4xl font-extrabold text-base-white'>
@@ -41,8 +40,7 @@ export function Event(props: EventProps) {
               asChild
               variant='outline'
               colorScheme='brand'
-              className='w-36'
-            >
+              className='w-36'>
               <Link href={props.url}>Ver mais</Link>
             </Button>
           </div>

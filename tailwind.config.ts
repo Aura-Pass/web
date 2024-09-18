@@ -20,6 +20,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        desktop: '390px',
+      },
       colors: { ...colors },
       fontWeight: {
         semibold: '650',
