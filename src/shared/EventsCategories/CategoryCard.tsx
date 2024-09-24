@@ -7,7 +7,7 @@ type CategoryCardProps = Category;
 export function CategoryCard({ imageUrl, name, url }: CategoryCardProps) {
   return (
     <Link
-      href={`/events?search=${url}`}
+      href={`/category/${url}`}
       className='group relative flex h-[99px] w-[160px] items-end justify-start overflow-hidden rounded-2xl border-[1.5px] border-neutral-800 bg-danger-1000 p-2 shadow duration-300 hover:border-[#62E7DE] hover:shadow-brand sm:h-36 sm:w-[225px] sm:p-3'>
       <div className='absolute left-0 top-0 z-10 block size-full bg-gradient-to-b from-black/0 to-black/80' />
       <Image
